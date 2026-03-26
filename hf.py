@@ -3,7 +3,7 @@ from huggingface_hub import InferenceClient
 MODELS=getattr(
     config,
     "HF_MODELS",
-    ["openai/gpt-oss-120b"],
+    ["deepseek-ai/DeepSeek-V3"],
 
 )
 def generate_response(prompt: str, temperature: float=0.3, max_tokens: int=512)-> str:

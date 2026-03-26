@@ -1,7 +1,7 @@
 import config 
 from openai import OpenAI
 GROQ_URL="https://api.groq/openai/v1"
-MODELS=getattr(config, "GROQ_MODELS", ["Qwen/Qwen2.5-7B-Instruct"])
+MODELS=getattr(config, "GROQ_MODELS", ["deepseek-ai/DeepSeek-V3"])
 def generate_response(prompt: str, temperature: float=0.3, max_tokens: int=512)-> str:
     key=getattr(config, "GROQ_API_KEY", None)
     if not key:
